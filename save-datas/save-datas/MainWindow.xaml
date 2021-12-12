@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:save_datas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Save Datas" Height="850" Width="1250" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="NoResize">
     <Grid>
-        
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" />
+                <MenuItem Header="_Open" />
+                <MenuItem Header="_Save"/>
+                <MenuItem Header="Save _as"/>
+                <Separator></Separator>
+                <MenuItem Header="_Exit"/>
+            </MenuItem>
+        </Menu>
+        <RichTextBox Margin="55,28,55,177">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <StackPanel Margin="55,660,55,10" Background="#FF3BF3BD">
+            <Label Content="Topic for your article:" FontWeight="Bold"/>
+            <CheckBox Content="Computer" Name="computerCB" Margin="15,0,1000,10"/>
+            <CheckBox Content="Car" Name="carCB" Margin="15,0,1000,10"/>
+            <CheckBox Content="Football" Name="footballCB" Margin="15,0,1000,10"/>
+            <CheckBox Content="Music" Name="musicCB" Margin="15,0,1000,10"/>
+        </StackPanel>
+
+
     </Grid>
 </Window>
