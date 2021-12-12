@@ -8,3 +8,5 @@ Start at 12.12.2021
 IDE : MS Visual Studio 2022 Community<br>
 Language C#<br>
 .NET framework 4.8<br>
+<p>
+  <b>INFO : I am an absolute beginner... english language worse... location : Cologne/germany</b>
