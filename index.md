@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## Welcome to my GitHub Page
 
-You can use the [editor on GitHub](https://github.com/AndyZink/save-datas/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is my first try to use github. Save-Datas is my first project on github.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### My XAML
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Here is the first xaml file
 
-```markdown
-Syntax highlighted code block
+```source code
+<Window x:Class="save_datas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:save_datas"
+        mc:Ignorable="d"
+        Title="Save Datas" Height="850" Width="1250" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="NoResize">
+    <Grid>
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" />
+                <MenuItem Header="_Open" />
+                <MenuItem Header="_Save"/>
+                <MenuItem Header="Save _as"/>
+                <Separator></Separator>
+                <MenuItem Header="_Exit"/>
+            </MenuItem>
+        </Menu>
+        <RichTextBox Margin="55,28,55,177">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <StackPanel Margin="55,660,55,10" Background="#FF3BF3BD">
+            <Label Content="Topic for your article:" FontWeight="Bold"/>
+            <CheckBox Content="Computer" Name="computerCB" Margin="15,0,1000,10"/>
+            <CheckBox Content="Car" Name="carCB" Margin="15,0,1000,10"/>
+            <CheckBox Content="Football" Name="footballCB" Margin="15,0,1000,10"/>
+            <CheckBox Content="Music" Name="musicCB" Margin="15,0,1000,10"/>
+        </StackPanel>
+    </Grid>
+</Window>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AndyZink/save-datas/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
